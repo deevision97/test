@@ -34,4 +34,10 @@
    groups:
    -principals:
     -pdiv0srvtest
+  ----------
+  prod:
+   groups:
+   -principals:
+    -pdiv0srvtest
+  
      
