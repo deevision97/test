@@ -206,3 +206,39 @@
  producer: slke0laketwopro
    consumer: slke0laketwocg25
     groups: - lke0-d-silverlake-test2-cg25
+---
+-name: test-topic
+ legacy: false
+ partitions: 2
+ options:
+  log-retention-size: 1gb
+ producer:
+  dev:
+   principals:
+   -sdiv0srvdtest
+  qa:
+   principals:
+   -sdiv0srvqtest
+  uat:
+   principals:
+   -sdiv0srvutest
+  prod:
+   principals:
+   -pdiv0srvdtest
+ consumer:
+  dev:
+   groups:
+   -principals:
+    -sdiv0srvtest
+  qa:
+   groups:
+   -principals:
+    -sdiv0srvtest
+  uat:
+   groups:
+   -principals:
+    -sdiv0srvtest
+  prod:
+   groups:
+   -principals:
+    -pdiv0srvtest
