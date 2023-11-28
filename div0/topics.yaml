@@ -1,36 +1,40 @@
----
--name: test-topic
- legacy: false
- partitions: 2
- options:
-  log-retention-size: 1gb
- producer:
-  dev:
-   principals:
-   -sdiv0srvdtest
-  qa:
-   principals:
-   -sdiv0srvqtest
-  uat:
-   principals:
-   -sdiv0srvutest
-  prod:
-   principals:
-   -pdiv0srvdtest
- consumer:
-  dev:
-   groups:
-   -principals:
-    -sdiv0srvtest
-  qa:
-   groups:
-   -principals:
-    -sdiv0srvtest
-  uat:
-   groups:
-   -principals:
-    -sdiv0srvtest
-  prod:
-   groups:
-   -principals:
-    -pdiv0srvtest
+--- 
+-name: silverlake-test
+ partitions: 4
+ option: 
+  log-retention-size: 5gb
+ producer: slke0lakepro
+   consumer: slke0lakecg1
+    groups: - lke0-d-silverlake-test-cg1
+
+-name: silverlake-test2
+ partitions: 5
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg1
+    groups: - lke0-d-silverlake-test2-cg1
+
+-name: silverlake-test3
+ partitions: 6
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg2
+    groups: - lke0-d-silverlake-test2-cg2
+
+-name: silverlake-test4
+ partitions: 7
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg3
+    groups: - lke0-d-silverlake-test2-cg3
+
+-name: silverlake-test5
+ partitions: 8
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg4
+    groups: - lke0-d-silverlake-test2-cg4
