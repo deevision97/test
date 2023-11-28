@@ -6,7 +6,7 @@
  producer: slke0lakepro
    consumer: slke0lakecg1
     groups: - lke0-d-silverlake-test-cg1
-
+ 
 -name: silverlake-test2
  partitions: 5
  option: 
@@ -14,7 +14,7 @@
  producer: slke0laketwopro
    consumer: slke0laketwocg1
     groups: - lke0-d-silverlake-test2-cg1
-
+ 
 -name: silverlake-test3
  partitions: 6
  option: 
@@ -22,7 +22,7 @@
  producer: slke0laketwopro
    consumer: slke0laketwocg2
     groups: - lke0-d-silverlake-test2-cg2
-
+ 
 -name: silverlake-test4
  partitions: 7
  option: 
@@ -30,7 +30,7 @@
  producer: slke0laketwopro
    consumer: slke0laketwocg3
     groups: - lke0-d-silverlake-test2-cg3
-
+ 
 -name: silverlake-test5
  partitions: 8
  option: 
@@ -38,3 +38,19 @@
  producer: slke0laketwopro
    consumer: slke0laketwocg4
     groups: - lke0-d-silverlake-test2-cg4
+ 
+-name: silverlake-test6
+ partitions: 9
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg5
+    groups: - lke0-d-silverlake-test2-cg5
+ 
+-name: silverlake-test7
+ partitions: 10
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg6
+    groups: - lke0-d-silverlake-test2-cg6
