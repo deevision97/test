@@ -206,3 +206,91 @@
  producer: slke0laketwopro
    consumer: slke0laketwocg25
     groups: - lke0-d-silverlake-test2-cg25
+ 
+-name: silverlake-test27
+ partitions: 30
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg26
+    groups: - lke0-d-silverlake-test2-cg26
+ 
+-name: silverlake-test28
+ partitions: 31
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg27
+    groups: - lke0-d-silverlake-test2-cg27
+ 
+-name: silverlake-test29
+ partitions: 32
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg28
+    groups: - lke0-d-silverlake-test2-cg28
+ 
+-name: silverlake-test30
+ partitions: 33
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg29
+    groups: - lke0-d-silverlake-test2-cg29
+ 
+-name: silverlake-test31
+ partitions: 34
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg30
+    groups: - lke0-d-silverlake-test2-cg30
+ 
+-name: silverlake-test32
+ partitions: 35
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg31
+    groups: - lke0-d-silverlake-test2-cg31
+ 
+-name: silverlake-test33
+ partitions: 36
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg32
+    groups: - lke0-d-silverlake-test2-cg32
+ 
+-name: silverlake-test34
+ partitions: 37
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg33
+    groups: - lke0-d-silverlake-test2-cg33
+ 
+-name: silverlake-test35
+ partitions: 38
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg34
+    groups: - lke0-d-silverlake-test2-cg34
+ 
+-name: silverlake-test36
+ partitions: 39
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg35
+    groups: - lke0-d-silverlake-test2-cg35
+ 
+-name: silverlake-test37
+ partitions: 40
+ option: 
+  log-retention-size: 10gb
+ producer: slke0laketwopro
+   consumer: slke0laketwocg36
+    groups: - lke0-d-silverlake-test2-cg36
